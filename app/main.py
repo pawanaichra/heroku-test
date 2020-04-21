@@ -1,12 +1,7 @@
-import base64
-from flask import Flask
-from flask import request
-app = Flask(__name__)
-
-@app.route("/")
-def root():
-  try:
-    print("hello")
-  except Exception as err:
-    print(err)
-  return "done"
+from flask import Flask 
+  
+app = Flask(__name__) 
+  
+@app.route("/") 
+def home_view(): 
+        return "<h1>Welcome to Geeks for Geeks</h1>"
