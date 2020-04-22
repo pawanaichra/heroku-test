@@ -1,4 +1,3 @@
 Flask
 gunicorn
-Pillow
-opencv-python==3.4.2.17
+matplotlib
