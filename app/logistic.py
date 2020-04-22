@@ -14,7 +14,7 @@ def logistic_func():
   prob = sigmoid(z)
   print(prob)
   if(prob>.7):
-    return("Laterite")
+    return("Laterite"+str(r)+" "+str(g)+" "+str(b))
   elif(prob<.3):
     return("Alluvial")
   else:
