@@ -12,7 +12,9 @@ def logistic_func():
   z = np.dot(X, theta)
   prob = sigmoid(z)
   print(prob)
-  if(prob>.5):
+  if(prob>.7):
     return("Laterite")
-  else:
+  elif(prob<.3):
     return("Alluvial")
+  else:
+    return("none")
