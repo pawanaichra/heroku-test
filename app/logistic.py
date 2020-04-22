@@ -7,6 +7,7 @@ def logistic_func():
   r=l[0,:,:].mean()
   g= l[1,:,:].mean()
   b = l[2,:,:].mean()
+  print(b,g,r)
   theta = np.array([-2.17299476, -0.06251461, -0.28642574,  0.28075228])
   X=np.array([1,b,g,r])
   z = np.dot(X, theta)
