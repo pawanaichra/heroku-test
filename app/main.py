@@ -12,7 +12,7 @@ def root():
     imgdata = base64.b64decode(imgstring)
     with open("img.jpg", 'wb') as f:
       f.write(imgdata)
-    result = logistic_func(rgb)
+    result = logistic_func()
     return result
   except Exception as err:
     print(err)
