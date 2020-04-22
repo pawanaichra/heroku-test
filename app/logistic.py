@@ -8,7 +8,7 @@ def logistic_func():
   g= l[1,:,:].mean()
   b = l[2,:,:].mean()
   theta = np.array([-2.17299476, -0.06251461, -0.28642574,  0.28075228])
-  X=np.array([1,r,g,b])
+  X=np.array([1,b,g,r])
   z = np.dot(X, theta)
   prob = sigmoid(z)
   print(prob)
