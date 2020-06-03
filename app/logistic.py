@@ -13,9 +13,9 @@ def logistic_func():
   z = np.dot(X, theta)
   prob = sigmoid(z)
   print(prob)
-  if(prob>.7):
-    return("Laterite"+" "+str(int(r))+" "+str(int(g))+" " + str(int(b))    )
-  elif(prob<.3):
-    return("Alluvial"+" "+str(int(r))+" "+str(int(g))+" " + str(int(b))   )
+  if(prob>.9):
+    return("Laterite"+"\n"+str(int(r))+" "+str(int(g))+" " + str(int(b))    )
+  elif(prob<.1):
+    return("Alluvial"+"\n"+str(int(r))+" "+str(int(g))+" " + str(int(b))   )
   else:
-    return("none"+" "+str(int(r))+" "+str(int(g))+" " + str(int(b))   )
+    return("none")
