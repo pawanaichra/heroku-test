@@ -2,9 +2,7 @@ import base64
 from flask import Flask
 from flask import request
 from app.logistic import logistic_func
-  
 app = Flask(__name__) 
-  
 @app.route("/", methods=['POST'])
 def root():
   try:
