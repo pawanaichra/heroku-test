@@ -15,8 +15,8 @@ def logistic_func():
   prob = sigmoid(z)
   print(prob)
   if(prob>=.5):
-    return("Laterite"+"\n"+"R:"+str(int(r))+" "+"G:"+str(int(g))+" " + "B:"+str(int(b))    )
+    return("Soil: LATERITE"+"\n"+"R:"+str(int(r))+" "+"G:"+str(int(g))+" " + "B:"+str(int(b))    )
   elif(prob<.5):
-    return("Alluvial"+"\n"+"R:"+str(int(r))+" "+"G:"+str(int(g))+" " + "B:"+str(int(b))   )
+    return("Soil: ALLUVIAL"+"\n"+"R:"+str(int(r))+" "+"G:"+str(int(g))+" " + "B:"+str(int(b))   )
   else:
     return("none")
